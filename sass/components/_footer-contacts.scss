@@ -1,0 +1,22 @@
+.footer-contacts {
+  margin-right: 70px;
+}
+.adress {
+  font-style: normal;
+}
+
+.adress__link {
+  transition: color $transition-duration $timing-function;
+  color: rgba(255, 255, 255, 0.6);
+  &:focus,
+  &:hover {
+    color: $text-color-logo;
+  }
+  &--color {
+    color: $text-color-white;
+  }
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
