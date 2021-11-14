@@ -1,5 +1,10 @@
+.footer-social {
+  margin-bottom: 60px;
+}
+
 .footer-social__list {
   display: flex;
+  align-items: center;
 }
 .footer-social__item:not(:last-child) {
   margin-right: 10px;

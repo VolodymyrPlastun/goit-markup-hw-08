@@ -1,10 +1,19 @@
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .adress {
   font-style: normal;
 }
-
+.adress__list {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .adress__link {
   transition: color $transition-duration $timing-function;
   color: rgba(255, 255, 255, 0.6);
@@ -18,5 +27,5 @@
 }
 
 .adress__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
