@@ -1,5 +1,7 @@
 .footer-social {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__list {

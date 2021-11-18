@@ -4,6 +4,9 @@
   font-size: 26px;
   line-height: 1.19;
   color: $text-color-logo;
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
 }
 .logo__header {
   color: #000000;
