@@ -1,159 +1,70 @@
-// .mob-header {
-//   @media screen and (max-width: 767px) {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-// }
+.mob-header {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
-// .mob-menu {
-//   @media screen and (max-width: 767px) {
-//     overflow: scroll;
-//     position: fixed;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     padding: 48px 40px;
-//     background-color: #ffffff;
-//     transform: translateX(100%);
-//     transition: transform $timing-function $transition-duration;
-//     .mob-menu.is-open {
-//       transform: translateX(0);
-//     }
-//   }
-// }
+.mob-menu {
+  @media screen and (max-width: 767px) {
+    overflow: scroll;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    transition: transform $timing-function $transition-duration;
+  }
+}
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+.mob-menu-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
 
-// .mob-menu-btn {
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 40px;
-//   height: 40px;
-//   border: none;
-//   background-color: transparent;
-
-//   &--position {
-//     position: absolute;
-//     border-radius: 50%;
-//     top: 10px;
-//     right: 15px;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .mob-menu-btn {
-//     display: none;
-//   }
-// }
-// .mob-social {
-//   display: flex;
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-// .mob-socil__item {
-//   &:not(:last-child) {
-//     border-right: 1px solid rgba(33, 33, 33, 0.2);
-//     padding-right: 10px;
-//     margin-right: 10px;
-//   }
-// }
-// .mob-social__link {
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.22;
-//   letter-spacing: 0.02em;
-
-//   color: $text-color-logo;
-// }
+  &--position {
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .menu {
+  .mob-menu-btn {
     display: none;
   }
 }
-
-.menu {
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  padding: 48px 40px;
-  z-index: 1000;
-  transform: translateX(100%);
-  //   transition: transform $trans-duration $timing-function;
-}
-
-.is-open {
-  transform: translateX(0);
-}
-
-.menuitem {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-.menulink {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  color: black;
-
-  &--active,
-  &:hover {
-    color: blue;
-  }
-}
-.menucontacts {
-  margin-top: 302px;
-}
-.menucontactsitem {
-  &:first-child {
-    margin-bottom: 32px;
-  }
-}
-.menucontactsphone {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: blue;
-}
-
-.menucontactsmail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: gray;
-}
-.menusocials {
-  margin-top: 64px;
+.mob-social {
   display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-.menusocialsitem {
-  margin: 10px 0;
+.mob-socil__item {
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
-  }
-  &:not(:first-child) {
-    padding-left: 10px;
+    margin-right: 10px;
   }
 }
-.menusocialslink {
-  padding: 10px 0;
+.mob-social__link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
-  color: blue;
+
+  color: $text-color-logo;
 }
