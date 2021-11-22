@@ -1,12 +1,11 @@
-// .page-header {
-//   border-bottom-width: 1px;
-//   border-bottom-style: solid;
-//   border-bottom-color: #ececec;
-// }
-// .container--flex {
-//   display: flex;
-//   align-items: center;
-// }
-.site-nav {
-  // margin-left: 93px;
+.page-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+@media screen and (min-width: 767px) {
+  .container--flex {
+    display: flex;
+    align-items: center;
+  }
 }
