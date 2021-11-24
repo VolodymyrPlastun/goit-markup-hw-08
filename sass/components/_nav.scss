@@ -3,7 +3,7 @@
     margin-right: 84px;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 305px;
+    // margin-right: 305px;
   }
 }
 
@@ -14,8 +14,6 @@
 }
 
 .site-nav__item {
-  //   display: block;
-
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 32px;

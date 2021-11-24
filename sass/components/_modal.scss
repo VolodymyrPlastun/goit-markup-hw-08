@@ -2,22 +2,14 @@
   padding: 40px;
   position: relative;
   opacity: 1;
-  //   top: 50%;
-  //   left: 50%;
-
   transition: transform $transition-duration $timing-function,
     opacity $transition-duration $timing-function;
-  //   transform: scale(1) translate(-50%, -50%);
-  //   transition: transform $transition-duration $timing-function,
-  //     opacity $transition-duration $timing-function;
   background-color: $mainbgc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   @media screen and (min-width: 480px) {
     width: 450px;
-    // top: 50%;
-    // left: 50%;
   }
   @media screen and (min-width: 768px) {
     top: 50%;
@@ -62,7 +54,6 @@
 }
 
 .modal__icon {
-  // transition: fill $transition-duration $timing-function;
   fill: #000000;
 }
 .modal__label {
@@ -93,7 +84,6 @@
   border-radius: 4px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  // transition: border-color $transition-duration $timing-function;
   @media screen and (max-width: 1199px) {
     &::placeholder {
       font-size: 14px;
@@ -111,9 +101,7 @@
   }
   &:focus,
   &:hover {
-    // color: $text-color-logo;
-
-    border-color: $text-color-logo;
+   border-color: $text-color-logo;
   }
 }
 

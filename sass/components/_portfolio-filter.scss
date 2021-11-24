@@ -24,12 +24,16 @@
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.filter__item:nth-child(3) {
-  margin-right: 0;
+
+@media screen and (max-width: 767px) {
+  .filter__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  .filter__item:nth-child(3) {
+    margin-right: 0;
+  }
 }
-.filter__item:nth-child(-n + 3) {
-  margin-bottom: 15px;
-}
+
 .filter__button {
   cursor: pointer;
   padding: 6px 22px;
